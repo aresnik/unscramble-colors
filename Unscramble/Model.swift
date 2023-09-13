@@ -36,29 +36,29 @@ final class Model: ObservableObject {
     private var defaults: UserDefaults = UserDefaults.standard
     
     func save() {
-        defaults.set(moves, forKey: "movesCurrent")
-        defaults.set(time, forKey: "timeCurrent")
-        movesBest = defaults.integer(forKey: "movesBest")
+        NSUbiquitousKeyValueStore().set(moves, forKey: "movesCurrent")
+        NSUbiquitousKeyValueStore().set(time, forKey: "timeCurrent")
+        movesBest = Int(NSUbiquitousKeyValueStore().double(forKey: "movesBest"))
         if movesBest == 0 {
             movesBest = moves
         }
         if moves <= movesBest {
-            defaults.set(moves, forKey: "movesBest")
+            NSUbiquitousKeyValueStore().set(moves, forKey: "movesBest")
         }
-        elapsedBest = defaults.integer(forKey: "elapsedBest")
+        elapsedBest = Int(NSUbiquitousKeyValueStore().double(forKey: "elapsedBest"))
         if elapsedBest == 0 {
             elapsedBest = elapsed
         }
         if elapsed <= elapsedBest {
-            defaults.set(elapsed, forKey: "elapsedBest")
+            NSUbiquitousKeyValueStore().set(elapsed, forKey: "elapsedBest")
         }
     }
     
     func load() {
-        movesCurrent = defaults.integer(forKey: "movesCurrent")
-        timeCurrent = defaults.string(forKey: "timeCurrent") ?? ""
-        movesBest = defaults.integer(forKey: "movesBest")
-        elapsedBest = defaults.integer(forKey: "elapsedBest")
+        movesCurrent = Int(NSUbiquitousKeyValueStore().double(forKey: "movesCurrent"))
+        timeCurrent = NSUbiquitousKeyValueStore().string(forKey: "timeCurrent") ?? ""
+        movesBest = Int(NSUbiquitousKeyValueStore().double(forKey: "movesBest"))
+        elapsedBest = Int(NSUbiquitousKeyValueStore().double(forKey: "elapsedBest"))
         timeBest = createTimeString(seconds: elapsedBest)
     }
     

@@ -26,6 +26,7 @@
 		46648776295FADDE00DA91B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46997B6F29A4F9D00035AF87 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		46CA1BBD298ABE9D00419481 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		46E474FB2AAF809500B1804B /* Unscramble Colors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Unscramble Colors.entitlements"; sourceTree = "<group>"; };
 		46E79CCC299AE1FB002690B7 /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = move.mp3; sourceTree = "<group>"; };
 		46E79CCE299BC2A8002690B7 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 		46E79CD0299C07CE002690B7 /* End.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = End.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		46648763295FADDD00DA91B9 = {
 			isa = PBXGroup;
 			children = (
+				46E474FB2AAF809500B1804B /* Unscramble Colors.entitlements */,
 				4664876E295FADDD00DA91B9 /* Unscramble */,
 				4664876D295FADDD00DA91B9 /* Products */,
 			);
@@ -288,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Unscramble;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Unscramble Colors.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -321,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Unscramble;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Unscramble Colors.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
