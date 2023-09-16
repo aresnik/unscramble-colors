@@ -23,7 +23,8 @@ struct End: View {
                 VStack {
                     if idiom == .phone { endIphone }
                     if idiom == .pad { endIpad }
-                } .onAppear(perform: viewModel.load)
+                }
+                .onAppear(perform: viewModel.load)
             )
         }
     }
@@ -73,7 +74,7 @@ extension End {
                     .padding()
                     .background(
                         Capsule()
-                        .stroke(Color.white, lineWidth: 2.0)
+                            .stroke(Color.white, lineWidth: 2.0)
                     )
             })
             Spacer()
@@ -125,7 +126,7 @@ extension End {
                     .padding(25)
                     .background(
                         Capsule()
-                        .stroke(Color.white, lineWidth: 4.0)
+                            .stroke(Color.white, lineWidth: 4.0)
                     )
             })
             Spacer()

@@ -45,12 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462D0D432AB3CA8F00816C82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46648763295FADDD00DA91B9 = {
 			isa = PBXGroup;
 			children = (
-				46E474FB2AAF809500B1804B /* Unscramble Colors.entitlements */,
 				4664876E295FADDD00DA91B9 /* Unscramble */,
 				4664876D295FADDD00DA91B9 /* Products */,
+				462D0D432AB3CA8F00816C82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,7 @@
 		4664876E295FADDD00DA91B9 /* Unscramble */ = {
 			isa = PBXGroup;
 			children = (
+				46E474FB2AAF809500B1804B /* Unscramble Colors.entitlements */,
 				4664876F295FADDD00DA91B9 /* UnscrambleApp.swift */,
 				46E79CCE299BC2A8002690B7 /* Start.swift */,
 				46E79CD0299C07CE002690B7 /* End.swift */,
@@ -103,6 +111,8 @@
 			dependencies = (
 			);
 			name = "Unscramble Colors";
+			packageProductDependencies = (
+			);
 			productName = Unscramble;
 			productReference = 4664876C295FADDD00DA91B9 /* Unscramble.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +141,8 @@
 				Base,
 			);
 			mainGroup = 46648763295FADDD00DA91B9;
+			packageReferences = (
+			);
 			productRefGroup = 4664876D295FADDD00DA91B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Unscramble;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Unscramble Colors.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Unscramble/Unscramble Colors.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -310,7 +322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderResnik.UnscrambleColors;
 				PRODUCT_NAME = Unscramble;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -324,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Unscramble;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Unscramble Colors.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Unscramble/Unscramble Colors.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -344,7 +356,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderResnik.UnscrambleColors;
 				PRODUCT_NAME = Unscramble;
 				SWIFT_EMIT_LOC_STRINGS = YES;
