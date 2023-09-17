@@ -49,13 +49,9 @@ final class Model: ObservableObject {
         if elapsedBest == 0 {
             elapsedBest = elapsed
         }
-//        if elapsed <= elapsedBest {
-            NSUbiquitousKeyValueStore().set(600, forKey: "elapsedBest")
-//        }
-//        Task {
-//            await submitTime()
-//            await leaderboardConfig()
-//        }
+        if elapsed <= elapsedBest {
+            NSUbiquitousKeyValueStore().set(elapsed, forKey: "elapsedBest")
+        }
     }
     
     func load() {
@@ -65,45 +61,6 @@ final class Model: ObservableObject {
         elapsedBest = Int(NSUbiquitousKeyValueStore().double(forKey: "elapsedBest"))
         timeBest = createTimeString(seconds: elapsedBest)
     }
-    
-//    func authenticateUser() async {
-//        do {
-//            let isAuthenticated = try await GameCenterKit.shared.authenticate()
-//            if isAuthenticated {
-//                // Local player is authenticated
-//            } else {
-//                // Local player is not authenticated
-//            }
-//        } catch {
-//            // Handle any errors that might occur during authentication
-//        }
-//    }
-//
-//    func submitTime() async {
-//        let identifierId: String = "com.UnscrambleColors.Time"
-//        do {
-//            try await GameCenterKit.shared.submitScore(score: 600, identifier: identifierId)
-//        } catch {
-//            print(error)
-//        }
-//    }
-//
-//    func leaderboardConfig() async {
-//        let identifierId: String = "com.UnscrambleColors.Time"
-//        // Number of top players (1 - 50) to use for getting the scores.
-//        let topPlayers: Int = 50
-//
-//        do {
-//           let (players, totalPlayers) = try await GameCenterKit.shared.retrieveBestPlayers(identifier: identifierId, topPlayers: topPlayers)
-//           print("total players: \(String(describing: totalPlayers))")
-//
-//           for player in players {
-//               print("player: \(player.displayName)\t score: \(player.leaderboard.score)")
-//           }
-//        } catch {
-//           print(error)
-//        }
-//    }
     
     func shuffleBoard() {
         color.shuffle()

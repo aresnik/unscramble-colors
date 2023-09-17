@@ -48,11 +48,6 @@ struct Board: View {
                     Alert()
                 }
             }
-//            .onAppear {
-//                Task {
-//                    await viewModel.authenticateUser()
-//                }
-//            }
         }
     }
 }

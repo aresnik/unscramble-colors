@@ -309,6 +309,7 @@
 				DEVELOPMENT_TEAM = 4P87YA35TA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Unscramble-Colors-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Unscramble;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -343,6 +344,7 @@
 				DEVELOPMENT_TEAM = 4P87YA35TA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Unscramble-Colors-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Unscramble;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
